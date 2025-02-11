@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient"
+    tools:context=".view.SensorLightActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/my_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="#2E5091"
+        android:elevation="4dp"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/addDeviceBtn"
+        android:layout_width="350dp"
+        android:layout_height="55dp"
+        android:layout_marginBottom="60dp"
+        android:background="#2E5091"
+        android:onClick="ButtonModifyLightPressed"
+        android:text="Configure device"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.459"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lightValue"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/sensorName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="10dp"
+        android:text="Your Sensor"
+        android:textAlignment="center"
+        android:textSize="32sp"
+        android:textStyle="bold"
+        android:autoSizeMaxTextSize="32sp"
+        android:autoSizeMinTextSize="25sp"
+        android:autoSizeStepGranularity="2sp"
+        android:autoSizeTextType="uniform"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/my_toolbar" />
+
+    <com.github.mikephil.charting.charts.PieChart
+        android:id="@+id/pie_chart"
+        android:layout_width="350dp"
+        android:layout_height="264dp"
+        android:layout_marginTop="40dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/statusSensor" />
+
+    <TextView
+        android:id="@+id/statusSensor"
+        android:layout_width="155dp"
+        android:layout_height="29dp"
+        android:ems="10"
+        android:inputType="text"
+        android:text="Status:"
+        android:textSize="25sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.226"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sensorName" />
+
+    <TextView
+        android:id="@+id/lightValue"
+        android:layout_width="212dp"
+        android:layout_height="118dp"
+        android:layout_marginTop="60dp"
+        android:autoSizeMaxTextSize="100sp"
+        android:autoSizeMinTextSize="55sp"
+        android:autoSizeStepGranularity="2sp"
+        android:autoSizeTextType="uniform"
+        android:ems="10"
+        android:inputType="text"
+        android:text="Value"
+        android:textSize="100sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.15"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pie_chart" />
+
+    <TextView
+        android:id="@+id/lightUnits"
+        android:layout_width="96dp"
+        android:layout_height="74dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="20dp"
+        android:autoSizeMaxTextSize="55sp"
+        android:autoSizeMinTextSize="40sp"
+        android:autoSizeStepGranularity="2sp"
+        android:autoSizeTextType="uniform"
+        android:ems="10"
+        android:inputType="text"
+        android:text="Units"
+        android:textSize="55sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/lightValue"
+        app:layout_constraintTop_toBottomOf="@+id/pie_chart" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

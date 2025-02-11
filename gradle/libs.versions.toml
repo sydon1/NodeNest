@@ -1,5 +1,6 @@
 [versions]
-agp = "8.3.2"
+agp = "8.4.0"
+hash4j = "0.17.0"
 junit = "4.13.2"
 junitVersion = "1.1.5"
 espressoCore = "3.5.1"
@@ -11,6 +12,7 @@ orgEclipsePahoAndroidService = "1.1.1"
 orgEclipsePahoClientMqttv3 = "1.1.0"
 
 [libraries]
+hash4j = { module = "com.dynatrace.hash4j:hash4j", version.ref = "hash4j" }
 junit = { group = "junit", name = "junit", version.ref = "junit" }
 ext-junit = { group = "androidx.test.ext", name = "junit", version.ref = "junitVersion" }
 espresso-core = { group = "androidx.test.espresso", name = "espresso-core", version.ref = "espressoCore" }

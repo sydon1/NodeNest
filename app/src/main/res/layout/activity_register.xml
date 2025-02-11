@@ -5,10 +5,11 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/gradient"
     tools:context=".view.RegisterActivity">
 
     <TextView
-        android:id="@+id/createAccount"
+        android:id="@+id/sensorName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
@@ -22,20 +23,20 @@
 
     <EditText
         android:id="@+id/email"
-        android:layout_width="250dp"
-        android:layout_height="40dp"
+        android:layout_width="254dp"
+        android:layout_height="49dp"
         android:layout_marginStart="16dp"
         android:layout_marginTop="50dp"
         android:hint="@string/email"
         android:inputType="textEmailAddress"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/createAccount"
+        app:layout_constraintTop_toBottomOf="@+id/sensorName"
         app:layout_constraintWidth_percent="0.8" />
 
     <EditText
         android:id="@+id/registerUsername"
-        android:layout_width="250dp"
-        android:layout_height="40dp"
+        android:layout_width="256dp"
+        android:layout_height="49dp"
         android:layout_marginStart="16dp"
         android:layout_marginTop="20dp"
         android:hint="@string/username"
@@ -45,8 +46,8 @@
 
     <EditText
         android:id="@+id/registerPassword"
-        android:layout_width="250dp"
-        android:layout_height="40dp"
+        android:layout_width="257dp"
+        android:layout_height="50dp"
         android:layout_marginStart="16dp"
         android:layout_marginTop="20dp"
         android:hint="@string/password"
@@ -55,27 +56,28 @@
         app:layout_constraintTop_toBottomOf="@+id/registerUsername"
         app:layout_constraintWidth_percent="0.8" />
 
-    <Button
+    <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/btnRegister"
         android:layout_width="350dp"
-        android:layout_height="45dp"
+        android:layout_height="50dp"
         android:layout_marginTop="50dp"
-        android:onClick="onBtnRegister_Click"
         android:text="@string/register"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/registerPassword" />
 
-    <Button
+    <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/btnReturn"
         android:layout_width="350dp"
         android:layout_height="45dp"
-        android:layout_marginTop="340dp"
+        android:background="#2E5091"
+        android:textColor="@color/white"
+        android:layout_marginTop="260dp"
         android:onClick="onBtnReturn_Click"
         android:text="@string/returnWord"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_bias="0.508"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btnRegister" />
 

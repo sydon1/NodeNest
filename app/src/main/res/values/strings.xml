@@ -9,4 +9,10 @@
     <string name="create_account">Create Your Account</string>
     <string name="email">Email</string>
     <string name="returnWord">Return</string>
+    <string name="action">Details</string>
+    <string name="measurement">Measurement</string>
+    <string name="status_active">Status: Active</string>
+    <string name="device_name">Device Name</string>
+    <string name="add_a_new_device">Add a new device</string>
+    <string name="logout">Logout</string>
 </resources>
