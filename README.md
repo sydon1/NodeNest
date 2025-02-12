@@ -1,4 +1,4 @@
-This is a an Android application developed in Java with Android Studio my second year course "Programming Techniques" at KU Leuven - Group T.  
+This is a an Android application developed in Java with Android Studio for my second year course "Programming Techniques" at KU Leuven - Group T.  
 Grade: 15/20
 
 ## Overview
